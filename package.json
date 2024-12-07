@@ -1,0 +1,22 @@
+{
+  "name": "email-read",
+  "version": "1.0.0",
+  "description": "Simple email reader",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "bin": {
+    "read-email": "./bin/index.js"
+  },
+  "dependencies": {
+    "googleapis": "^118.0.0",
+    "dotenv": "^16.0.3",
+    "@google-cloud/local-auth": "^2.1.0",
+    "commander": "^11.0.0",
+    "inquirer": "^8.2.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
