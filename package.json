@@ -1,22 +1,31 @@
 {
-  "name": "email-read",
+  "name": "gmail-email-read",
   "version": "1.0.0",
-  "description": "Simple email reader",
-  "main": "index.js",
+  "description": "Debug sender for Gmail email reader",
+  "main": "src/debug-send.js",
   "scripts": {
-    "start": "node bin/index.js"
+    "server": "node bin/server.js",
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "read-email": "./bin/index.js"
+    "read-server": "./bin/server.js",
+    "debug-send": "./bin/send-cli.js",
+    "get-emails": "./bin/get-emails.js"
   },
   "dependencies": {
     "googleapis": "^118.0.0",
     "dotenv": "^16.0.3",
     "@google-cloud/local-auth": "^2.1.0",
     "commander": "^11.0.0",
-    "inquirer": "^8.2.5"
+    "inquirer": "^8.2.5",
+    "net": "*"
   },
-  "keywords": [],
+  "keywords": [
+    "gmail",
+    "debug",
+    "cli"
+  ],
   "author": "",
   "license": "ISC"
 }
